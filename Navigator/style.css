@@ -1,0 +1,153 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+.main {
+    background: url("./assets/photo.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn-one i {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.nav-slider {
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+
+.nav-slider .logo {
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+    height: 60px;
+}
+
+.nav-slider .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-slider .btn-two i {
+    position: absolute;
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    left: 275px;
+    /* opacity: 0; */
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.nav-slider .nav-menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.nav-slider .nav-menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+
+.nav-slider .nav-menu i, a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-slider .nav-menu i {
+    padding-right: 8px;
+}
+
+
+.nav-slider .social-media {
+    position: absolute;
+    color: white;
+    left: 25%;
+    bottom: 25px;
+}
+
+.nav-slider .social-media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+
+#check {
+    display: none;
+}
+
+.nav-slider .nav-menu li:hover {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.btn-one i:hover {
+    font-size: 35px;
+}
+
+.btn-two i:hover {
+    font-size: 30px;
+}
+
+.nav-slider .social-media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+#check:checked ~.nav-slider {
+    left: 0;
+}
+
+#check:checked ~ .btn-one i {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
